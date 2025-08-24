@@ -74,16 +74,6 @@ export default function Navigation() {
                 Home
               </a>
               <a 
-                href="#about" 
-                className={`nav-link font-medium px-3 py-2 ${
-                  activeSection === 'about' ? 'active text-accent-yellow' : 'text-white hover:text-accent-yellow'
-                }`}
-                onClick={(e) => handleNavClick(e, '#about')}
-                data-testid="nav-about"
-              >
-                About
-              </a>
-              <a 
                 href="#clients" 
                 className={`nav-link font-medium px-3 py-2 ${
                   activeSection === 'clients' ? 'active text-accent-yellow' : 'text-white hover:text-accent-yellow'
@@ -92,6 +82,16 @@ export default function Navigation() {
                 data-testid="nav-clients"
               >
                 Clients
+              </a>
+                            <a 
+                href="#about" 
+                className={`nav-link font-medium px-3 py-2 ${
+                  activeSection === 'about' ? 'active text-accent-yellow' : 'text-white hover:text-accent-yellow'
+                }`}
+                onClick={(e) => handleNavClick(e, '#about')}
+                data-testid="nav-about"
+              >
+                About
               </a>
               <a 
                 href="#services" 
