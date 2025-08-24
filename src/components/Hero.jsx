@@ -14,7 +14,7 @@ export default function Hero() {
               </p>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 <span className="hero-text">React.js Developer</span><br />
-                <span className="text-accent-yellow">Who Knows AEM</span>
+                <span className="text-accent-yellow leading-[1.5]">Expertise In AEM</span>
               </h1>
               <p className="text-text-gray text-lg leading-relaxed max-w-lg">
                 Passionate React.js Developer with 2+ years of experience building scalable web applications and AEM components for major brands and enterprises.
