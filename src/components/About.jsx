@@ -26,19 +26,22 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-text-gray text-lg leading-relaxed">
               <p>
-                I'm a passionate React.js Developer with <span className="text-accent-yellow font-semibold">2+ years of experience</span> 
+                I'm a passionate React.js Developer with <span className="text-accent-yellow font-semibold">2+ years of experience</span>{' '}
                 building scalable web applications and AEM components for major brands and enterprises.
               </p>
               <p>
-                Highly proficient in <span className="text-white font-semibold">React.js, AEM, and Node.js</span>, 
+                Highly proficient in <span className="text-white font-semibold">React.js, AEM, and Node.js</span>,{' '}
                 I specialize in creating intuitive, user-centric, and responsive interfaces with modern frontend technologies.
               </p>
               <p>
-                My AEM expertise includes <span className="text-accent-yellow font-semibold">OSGI configuration, HTL (Sightly), dialog creation, style system, templates, experience fragments, content fragments, and MSM</span>. 
-                I'm committed to delivering innovative solutions that combine React's flexibility with AEM's powerful content management capabilities.
+                My AEM expertise includes{' '}
+                <span className="text-accent-yellow font-semibold">
+                  OSGI configuration, HTL (Sightly), dialog creation, style system, templates, experience fragments, content fragments, and MSM
+                </span>
+                . I'm committed to delivering innovative solutions that combine React's flexibility with AEM's powerful content management capabilities.
               </p>
             </div>
-            
+
             {/* Skills Progress */}
             <div className="mt-12 space-y-6">
               {skills.map((skill, index) => (
@@ -48,27 +51,25 @@ export default function About() {
                     <span className="text-accent-yellow font-semibold">{skill.percentage}%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div 
-                      className="bg-gradient-to-r from-accent-yellow to-orange-500 h-2 rounded-full" 
-                      style={{width: `${skill.percentage}%`}}
-                    ></div>
+                    <div className="bg-gradient-to-r from-accent-yellow to-orange-500 h-2 rounded-full" style={{ width: `${skill.percentage}%` }}></div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          
+
           {/* Tech Stack Visual */}
           <div className="animate-scale-in">
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {techStack.map((tech, index) => (
-                <div 
+                <div
                   key={index}
-                  className="bg-dark-card p-6 rounded-2xl text-center border border-gray-700 hover:border-accent-yellow transition-colors duration-300"
+                  className="bg-dark-card p-6 rounded-2xl text-center border border-gray-700 hover:border-accent-yellow transition-colors duration-300 w-full min-w-0 flex flex-col items-center justify-center"
+                  style={{ wordBreak: 'break-word' }}
                   data-testid={`tech-card-${tech.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                 >
                   <i className={`${tech.icon} text-4xl ${tech.color} mb-4`}></i>
-                  <h4 className="text-white font-semibold">{tech.name}</h4>
+                  <h4 className="text-white font-semibold text-sm sm:text-base break-words">{tech.name}</h4>
                 </div>
               ))}
             </div>

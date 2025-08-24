@@ -59,7 +59,7 @@ export default function Hero() {
           </div>
           
           {/* Right Content - Profile Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end profile-icon">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-accent-yellow animate-scale-in">
                 <img 
